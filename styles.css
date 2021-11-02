@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #313332;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 5px 20px #f6f7fb;
+  position: relative;
+  z-index: 1;
+}
+
+nav.container {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-list {
+  padding: 0 30px;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #939498;
+}
+
+.nav-list a:hover {
+  color: #61b287;
+}
+
+.nav-action {
+  display: flex;
+  align-items: center;
+}
+
+.nav-action button {
+  padding: 7px 15px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.nav-action button:hover {
+  background: #61b287;
+  color: #fff;
+}
+
+.nav-action .signup {
+  border: 1px solid #939498;
+}
+
+.introduction {
+  background: #f6f7fb;
+}
+
+.heading {
+  font-size: 3rem;
+  /* max-width: 375px; */
+}
