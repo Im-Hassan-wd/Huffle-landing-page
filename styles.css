@@ -90,5 +90,72 @@ nav.container {
 
 .heading {
   font-size: 3rem;
-  /* max-width: 375px; */
+  font-weight: 700;
+}
+
+.introduction__content p {
+  padding: 30px 0;
+  max-width: 40ch;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.introduction__content-action {
+  display: flex;
+}
+
+.introduction__content-action button {
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.introduction__content-action .btn {
+  background: #61b287;
+  color: #fff;
+}
+
+.creation {
+  background: #171739;
+  color: #fff;
+  text-align: center;
+}
+
+.secondary-heading {
+  max-width: 300px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.creation-paragraph {
+  color: rgba(255, 255, 255, 0.45);
+  padding: 15px 0 30px;
+}
+
+.creation__content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.creation__content-brand {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #61b287;
+  margin: 0 auto;
+}
+
+.creation__content-grid p {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.creation__content-grid h3 {
+  padding: 30px 0;
 }
