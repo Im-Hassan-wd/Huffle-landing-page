@@ -11,8 +11,7 @@ body {
   color: #313332;
 }
 
-section,
-.section {
+section {
   padding: 60px 0;
 }
 
@@ -85,6 +84,10 @@ nav.container {
   border: 1px solid #939498;
 }
 
+.hamburger {
+  display: none;
+}
+
 .introduction {
   background: #f6f7fb;
 }
@@ -117,9 +120,10 @@ div.introduction {
   border: none;
   background: transparent;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-.introduction__content-action .btn {
+button.btn {
   background: #61b287;
   color: #fff;
 }
@@ -205,12 +209,18 @@ div.introduction {
 }
 
 .work__content {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 30px;
+}
+
+.to-edge {
+  justify-self: end;
+}
+
+.work__content > img {
+  max-width: 100%;
 }
 
 .circle-brand {
@@ -232,7 +242,7 @@ div.introduction {
   max-width: 40ch;
 }
 
-.work__desription-info {
+.work__description-info {
   display: flex;
   align-items: center;
 }
@@ -241,6 +251,81 @@ div.introduction {
   margin-right: 10px;
 }
 
-.work__desription-info p {
+.work__description-info p {
   padding-bottom: 10px;
+}
+
+/* Tablet viewport */
+@media (max-width: 880px) {
+  .creation__content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .nav-links {
+    background: #171739;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    min-height: 7vh;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #fff;
+  }
+
+  /* .hamburger {
+    display: initial;
+    margin-left: 30px;
+  } */
+
+  .creation {
+    text-align: left;
+  }
+  .secondary-heading,
+  .creation__content-brand {
+    margin: 0;
+    max-width: none;
+  }
+
+  .creation__content-brand {
+    width: 75px;
+    height: 75px;
+  }
+
+  .creation__content h3 {
+    padding: 10px 0;
+    max-width: 200px;
+  }
+
+  .work__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .to-edge {
+    order: 1;
+  }
+
+  .work__description {
+    padding: 15px 0;
+  }
+}
+
+/* Mobile viewport */
+@media (max-width: 567px) {
+  .creation__content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .to-edge {
+    justify-self: start;
+  }
 }
