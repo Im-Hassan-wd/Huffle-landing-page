@@ -218,6 +218,7 @@ button.btn {
 
 .to-edge {
   justify-self: end;
+  order: 1;
 }
 
 .work__content > img {
@@ -314,10 +315,6 @@ button.btn {
     padding: 30px;
   }
 
-  .to-edge {
-    order: 1;
-  }
-
   .work__description {
     padding: 20px 0;
   }
@@ -370,7 +367,17 @@ button.btn {
     grid-template-columns: 1fr;
   }
 
+  .creation__content {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+  }
+
   .to-edge {
     justify-self: start;
+  }
+
+  .order__1 {
+    order: 1;
   }
 }
