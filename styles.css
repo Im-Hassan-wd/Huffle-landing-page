@@ -93,8 +93,9 @@ nav.container {
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 900;
+  line-height: 1;
 }
 
 div.introduction {
