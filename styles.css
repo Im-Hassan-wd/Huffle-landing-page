@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -94,8 +93,8 @@ nav.container {
 }
 
 .heading {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 div.introduction {
